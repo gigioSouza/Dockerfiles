@@ -17,6 +17,7 @@ WORKDIR /opt/cmak
 EXPOSE 8080
 
 ENTRYPOINT ["bin/cmak"]
+
 CMD ["-Dconfig.file=conf/application.conf", "-Dhttp.port=8080", "-Dpidfile.path=/dev/null"]
 
 HEALTHCHECK CMD curl -f http://127.0.0.1/api/health || exit 1
