@@ -1,1 +1,1 @@
-Docker Image for YApache Kafka.
+Docker Image for Apache Kafka.
